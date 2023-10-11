@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: payment-service-app
-        image: valorjj/payment-service:0.0.1
+        image: IMAGE_URL/payment-service
         imagePullPolicy: Always
         # resources:
         #   limits:
