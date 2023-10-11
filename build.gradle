@@ -74,7 +74,7 @@ jib {
 	}
 	// 빌드하고자 하는 이미지 설정
 	to {
-		image = 'valorjj/payment-service'
+		image = System.getProperty('REPO_URL') + '/payment-service'
 		tags = ['0.0.1', 'latest']
 	}
 }
