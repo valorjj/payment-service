@@ -50,6 +50,10 @@ dependencies {
 	if (osdetector.arch == "aarch_64") {
 		implementation("io.netty:netty-resolver-dns-native-macos:4.1.79.Final:osx-aarch_64")
 	}
+	
+	// -- swagger ui --
+	implementation('org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0')
+	
 }
 
 dependencyManagement {
@@ -70,7 +74,7 @@ jar {
 jib {
 	// 베이스 이미지 설정
 	from {
-		image = 'eclipse-temurin:17-jdk'
+		image = 'openjdk:17'
 	}
 	// 빌드하고자 하는 이미지 설정
 	to {

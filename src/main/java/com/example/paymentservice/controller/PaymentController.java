@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 public class PaymentController {
 
-    @Qualifier("paymentServiceImpl")
+    // @Qualifier("paymentServiceImpl")
     private final PaymentService paymentService;
 
     @PostMapping
